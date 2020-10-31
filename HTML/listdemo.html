@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        ul{
+            font-size: large; 
+            background: rgb(0, 0, 0);  
+            color: rgb(250, 0, 50); 
+            font-style: italic;
+        }
+        ol{
+            font-size: large; 
+            background: rgb(0, 0, 0);  
+            color: rgb(241, 133, 155); 
+            font-style: normal;
+        }
+        ul li{
+          text-transform: uppercase;
+          color: green;
+      }
+        ul li:first-child{
+            color: red;
+        }
+        ul#cartoon li:last child{
+            text-decoration:underline;
+        }
+
+    </style>
+</head>
+<body>
+    <ul style="list-style-type: square;">
+    <li>Mango</li>
+    <li>Orange</li>
+    <li>Apple</li>
+    </ul>
+    <ol style="list-style-type: upper-alpha;">
+        <li id="course">Java</li>
+        <li>Html</li>
+        <li>CSS</li>
+    </ol>
+    <ul id="cartoon">
+        <li>TOM</li>
+        <li>JERRY</li>
+        <li>HARRY</li>
+    </ul>
+</body>
+</html>

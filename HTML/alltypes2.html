@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body :first-child{
+            letter-spacing: 5px;
+        }
+        p:first-of-type{
+            color:blue;
+        }
+        div :last-child{
+            background-color: purple;
+        }
+        p:last-of-type{
+            color: green;
+        }
+        body h1:nth-of-type(2){
+            text-transform: uppercase;
+        }
+
+    </style>
+</head>
+<body>
+    <body>
+        <p> Inside p</p>
+        <p class="myclass">Inside P with class</p>
+        
+        <h1>hello world</h1>
+        <h1 id="header" class="myclass" >Inside h1 with class</h1>
+        
+        <h2>Inside H2</h2>
+        <h2 class="myclass">Inside h2</h2>
+        
+        <div>
+            <h1>h1 Inside div</h1>
+            <p>p child of div</p>
+            <p>second child of div</p>
+            <section>
+                    <h1>h1 Inside section</h1>
+                    <p>p child of section</p>
+            </section>
+        </div>
+        
+    
+    </body>
+</body>
+</html>
