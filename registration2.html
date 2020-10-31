@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration</title>
+ 
+    <script>
+        function checkUserName()
+        {
+         var usernames=['Ram','Tom','Rahul'];
+    //    // var name=prompt("Enter Your Name");
+        var na = document.getElementById("uname").value;
+        document.write(na);
+        var count=0;
+        for(var i=0;i<usernames.length;i++)
+        {
+            if(usernames.indexOf(na) > (-1))
+        {
+            count=count+1;
+            
+        }
+        }
+        if(count>0)
+        {
+            alert("Username Exists");
+        }
+        else{
+            usernames.push(na);
+            alert("Registration Successful");
+        }
+        }
+    </script>
+ 
+</head>
+<body>
+    
+    <form>
+    <input type="text" id="uname"/>
+    <input type="submit" onclick="checkUserName()"/>
+    </form>
+    
+</body>
+</html>

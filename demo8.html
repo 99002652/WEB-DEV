@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script>
+/*
+*/
+var arr=[10,20,30,40,50];
+for(let i=0; i<arr.length; i++){
+document.write(arr[i]+" ");
+ }
+document.write("Using forIn<br>");
+for(const i in arr){
+document.write(arr[i]+" ");
+ }
+document.write("Using forOf<br>");
+for (const ele of arr){
+document.write(arr[ele]+" ");
+ }
+document.write("Using forEach<br>");
+arr.forEach(function(element, index, arr){
+document.write(element+"<br>");
+ });
+document.write("Using forEach<br>");
+arr.forEach(function(element, index, arr){
+document.write(arr[index]+"<br>");
+ });
+ document.write("From here its new" +"<br/>");
+ arr.forEach((elem)=>{
+     document.write(elem+"<br/>");
+ });
+ setTimeout(() => {
+     console.log("Time Out Completed")
+     
+ }, 2000);
+</script>
+</head>
+<body>
+ 
+</body>
+</html>

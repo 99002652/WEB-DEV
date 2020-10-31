@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+ 
+    <script>
+        function validate(){
+            if(document.getElementById("name").value=="")
+            {
+                alert("Enter Your Name");
+                document.MyForm.uname.focus();
+            }
+            else if(document.getElementById("password").value=="")
+            {
+                alert("Enter Password");
+                document.MyForm.upassword.focus();
+            }
+            else if(document.getElementById("age").value=="")
+            {
+                alert("Enter Your Age");
+                document.MyForm.uage.focus();
+            }
+            else if(document.getElementById("id1").checked=="" && document.getElementById("id2").checked=="")
+            {
+                alert("Enter Your Gender");
+                document.MyForm.r1[0].checked=true;
+            }
+            else{
+                alert("Successfully Registered");
+                document.MyForm.submit();
+            }
+        }
+    </script>
+ 
+</head>
+<body>
+ 
+    <table border="2" style="background-color: bisque;">
+    <form action="greetfndemo.html" name="MyForm">
+       <tr>
+      <td>  Enter Name </td>
+       <td> <input type="text" name="uname" id="name" placeholder="Enter Name"/><br/></td>
+    </tr> 
+       <tr> <td>Enter Password</td>
+       <td><input type="password" name="upassword" id="password" placeholder="Enter Password"/><br/></td>
+    </tr>
+    <tr> <td>Age</td>
+        <td><input type="number" name="uage" id="age" placeholder="Enter Age"/><br/></td>
+     </tr>
+    <tr> <td>Gender</td>
+       <td> <input type="radio" id="id1" name="r1" value="Male">Male
+        <input type="radio" id="id2" name="r1" value="Female">Female
+        <br/></td></tr>
+ 
+        <tr><td><input type="button" onclick="validate()" value="Submit"/></td>
+       <td> <input type="Reset"  value="Clear"/>
+    </td></tr>
+    </form>
+</table>
+</body>
+</html>
+<!-- <!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="demo1.html" name="myform">
+        Name: <input type="text" name="name" required /><br />
+        Age: <input type="number" name="age" required min="18" max="80" step="2"/><br />
+        Phone<input type="tel" pattern="[0-9]{10}" name="phone"><br>
+        Email<input type="email" name="email" required><br>
+         <input type="submit" formtarget="_blank">
+       </form>
+</body>
+</html> -->

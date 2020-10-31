@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function greetUser(username){
+            document.write("Welcome"+username);
+        }
+        function greetUser(){
+            document.write("Hello");
+        }
+        greetUser("Priya");
+        greet();
+        function greet(){
+            document.write("Hello"+"<br/>");
+        }
+        //check();
+        var check =function(){
+            document.write("Welcome");
+        }
+        check();
+        setTimeout(function(){
+            console.log("Timeout Completed")
+        },2000)
+        setInterval(function(){
+            console.log("Ping Server...")
+            
+        }, 2000);
+        
+    </script>
+  
+</head>
+<body>
+ 
+    
+</body>
+</html>

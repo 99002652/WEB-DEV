@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function sayHello(){
+            uname=document.getElementById("username").value;
+            city=document.getElementById("city").value;
+            //document.write(uname+" " +city)
+            document.getElementById("mydiv").innerHTML="Hello " +uname ;
+            document.getElementById("mypara").innerHTML="Welcome to " +city;
+        }
+        function func(){
+                var data=document.getElementById("txa").value;
+                document.getElementById("mydivs").innerHTML=data;
+            }
+    </script>
+</head>
+<body>
+    
+    NAME <input type="text" id="username" name="username">
+    CITY <input type="text" id="city" name="city">
+    <br/>
+    <br/>
+    <input type="button" Value=SUBMIT onclick="sayHello()">
+    <br/>
+    <div id="mydiv" style="background-color: aqua;">
+       
+    </div>
+    <p id="mypara"></p>
+    <textarea width="1000px" height="1000px" id="txa" onkeyup="func()"></textarea>
+    
+    <div id="mydivs" style="background-color: aqua;">
+       
+    </div>
+    <a href="http://www.google.com" onclick="return confirm('Do you want to continue')">Google</a>
+</body>
+</html>
